@@ -49,9 +49,9 @@ namespace arkana::cpuid::cpu_supports
 ---
 ### `arkxmm.h`
 
-[`arkxmm.h`](arkxmm.h): **Strongly typed** SSE/AVX SIMD operation wrapper library, provides `arkxmm` namespace, defines 128,256 bit SIMD register types like `vi32x4`, `vu8x16`,..., (for 128 bit XMM register) and like `vu16x16`, `vu64x4` (for 256 bit AVX), and many operations for the types.
+[`arkxmm.h`](arkxmm.h): **Strongly typed** SSE/AVX SIMD operation wrapper library, provides `arkxmm` namespace, defines some 128/256 bit SIMD register types for each size integer/floating type like `vi32x4`, `vu16x8`, `vu8x16`, ... (for 128 bit XMM register) and like `vi32x8`, `vu16x16`, `vu8x32`, ... (for 256 bit AVX), and many operation overloads for them.
 
-The operators provided by this library, calls naturally appropriate intrinsic function for each s/u sized type:
+The operator overloads provided by this library call naturally appropriate intrinsic functions for each s/u sized type:
 
 ```cpp
 int main()
@@ -74,7 +74,7 @@ int main()
 }
 ```
 
-Other usages of xmm.h in my code:
+Some usages of xmm.h in my code:
 - [Convert NV12 surface to ARGB32](https://github.com/ttsuki/sandy/blob/develop/Sandy/MediaFoundation/SurfaceFormatConverter.cpp)
 - [Change volume of 2ch stereo audio waveform](https://github.com/ttsuki/vse/blob/develop/vse/processing/WaveformProcessing.cpp)
 - [High speed chacha20 cryptographic](https://github.com/ttsuki/chacha20poly1305/blob/develop/chacha20/chacha20.h)
@@ -126,7 +126,7 @@ vu8x16 operator +(vu8x16 a, vu8x16 b);
 ---
 ### `arkintrinsic.h`
 
-[`arkintrinsic.h`](arkintrinsic.h): Type conversion, Bit-manipulation, Multi-precision arithmetic helper, provides `arkana::intrinsics` namespace.
+[`arkintrinsic.h`](arkintrinsic.h): misc intrinsic helper, provides `arkana::intrinsics` namespace.
 
 ```cpp
 // arkintrinsic.h

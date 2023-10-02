@@ -1,6 +1,7 @@
 /// @file
 /// @brief	arkana::xmm - x86 SIMD Operation wrappers
 /// @author Copyright(c) 2020-2023 ttsuki
+/// Distributed under the Boost Software License, Version 1.0.
 ///         https://github.com/ttsuki/ark/
 
 #pragma once

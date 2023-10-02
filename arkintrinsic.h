@@ -1,6 +1,7 @@
 /// @file
 /// @brief	arkana::intrinsic
 /// @author Copyright(c) 2021 ttsuki
+/// Distributed under the Boost Software License, Version 1.0.
 ///         https://github.com/ttsuki/ark/
 
 #pragma once
